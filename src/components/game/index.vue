@@ -47,7 +47,7 @@ export default {
       stylesBoard: stylesBoard,
       styles: Store.get('styleBoard',
         {
-          board: 1,
+          board: 2,
           pieces: 0
         }),
       board: Store.get('board'),
@@ -487,7 +487,8 @@ export default {
       Jquery('html, body').animate({
         scrollTop: Jquery('#tablerochess').offset().top
       }, 500)
-    }.bind(this), 10)
+      this.styleAdapter()
+    }.bind(this), 100)
   },
   watch: {
     turn (newVal, oldVal) {

@@ -4,7 +4,7 @@
             <md-dropdown-item v-for="len in lenguajes" closing @click="changeLenguaje(len.value)">{{ len.label }}
             </md-dropdown-item>
         </md-dropdown-list>
-        <md-navbar title="VueChess" hamburger mode="hide-on-med-and-down" left nav-class="blue darken-4">
+        <md-navbar title="AjedrezLatino" hamburger mode="hide-on-med-and-down" left nav-class="blue darken-4">
             <md-nav-item v-link="{name: 'home',activeClass: 'active'}">{{ $t("home.title") }}</md-nav-item>
             <!--
             <md-nav-item v-link="{name: 'multiplayer',activeClass: 'active'}">Multijugador</md-nav-item>
@@ -42,9 +42,9 @@
                     <div slot="image" v-wave-effect class="waves-effect waves-block waves-light">
                         <img style=" width: 30%;left: 33%;" class="activator" src="./assets/2d.png">
                     </div>
-                    <p>
+      <!--               <p>
                         <a href="https://github.com/gustaYo/vue-chess">{{ $t("about.seemore") }}</a>
-                    </p>
+                    </p> -->
                     <div slot="reveal">
                       <span class="card-title grey-text text-darken-4">
                         {{ $t("about.namegame") }}
@@ -56,11 +56,11 @@
                         <p>
                             Vuejs, Nodejs, SocketIO, MongoDb y Webpack
                         </p>
-                        <h5 class="flat-text-header hello">{{ $t("about.dev") }}</h5>
+<!--                         <h5 class="flat-text-header hello">{{ $t("about.dev") }}</h5>
                         <p>
-                            Gustavo Crespo Sánchez gustayocs@gmail.com 2016
+                            Gustavoo Crespo Sánchez gustayocs@gmail.com 2016
                         </p>
-
+ -->
                         </p>
                     </div>
                 </md-card>
